@@ -11,7 +11,10 @@ This repository presents the Design Of 1-Bit Full Adder Using CMOS Mirror Logic 
 - - [Circuit](https://github.com/Yajnesh302/Full-Adder-Using-CMOS-Mirror-Logic/edit/main/README.md#circuit)
 - - [Idle Mode](https://github.com/Yajnesh302/Full-Adder-Using-CMOS-Mirror-Logic/edit/main/README.md#idle-mode)
 - - [Waveform](https://github.com/Yajnesh302/Full-Adder-Using-CMOS-Mirror-Logic/edit/main/README.md#waveform)
-- [Netlist](
+- [Netlist](https://github.com/Yajnesh302/Full-Adder-Using-CMOS-Mirror-Logic/blob/main/Netlist)
+- [Author](https://github.com/Yajnesh302/Full-Adder-Using-CMOS-Mirror-Logic/edit/main/README.md#author)
+- [Acknowledgement](https://github.com/Yajnesh302/Full-Adder-Using-CMOS-Mirror-Logic/edit/main/README.md#acknowledgement)
+- [References](https://github.com/Yajnesh302/Full-Adder-Using-CMOS-Mirror-Logic/edit/main/README.md#references)
 # Abstract
 This paper presents a 1-bit full adder cell designed by using the CMOS mirror technique. The full adder circuit is one of the most widely used building blocks in all arithmetic and digital data processing systems. This circuit accepts two 1-bit inputs and produces two 1-bit outputs i.e. sum and carry. We use the property of inversion and self-duality to design this circuit. Because nowadays we have to deal with huge bits of data, we can switch to more advanced adder architectures like  RIPPLECARRY, CARRYSKIP, CARRYSELECT, CARRYLOOKAHEAD, etc. The major drawback of the CMOS mirror circuit is that it consumes more power and occupies more area due to the greater number of transistors used.
 # Tools Used
