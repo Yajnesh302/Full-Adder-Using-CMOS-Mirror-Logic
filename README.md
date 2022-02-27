@@ -23,5 +23,18 @@ Transistor level implementation of full adder using CMOS mirror logic uses trans
 ![1-bit adder idle mode](https://user-images.githubusercontent.com/98546502/155893130-1617d593-ba4a-43a1-b729-5333d53e9e6b.png)
 >## Waveform
 ![1-bit adder waveform](https://user-images.githubusercontent.com/98546502/155893062-61986b8a-4225-4617-b7bf-d41d84bacf19.png)
+# Author
+Yajnesh K, B.E ECE, Mangalore Institute Of Technology & Engineering(MITE)
+# Acknowledgement
+1. [CLoud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
+2. [Synopsys India](https://www.synopsys.com/)
+3. [VLSI System Design (VSD)] Corp.Pvt.Ltd India
+4. Kunal Ghosh, Co-founder, VSD Corp.Pvt.Ltd.- [kunalghosh@gmail.com](kunalghosh@gmail.com)
+5. Chinmay Panda, IIT Hyderabad
+6. Sameer Durgoji, NIT Karnataka
+# References
+1. S. Dhanjal. 1-bit full adder transistor level implementation using CMOS mirror logic. https://youtu.be/BflzLRjsECM.
+2. International Journal Of Advance Research In Science & Engineering. http://www.ijarse.com/images/fullpdf/1444293364_4_Research_Paper.pdf
+3. Sung-Mo-Kang and Y. Leblebici. combinational mos logic circuit. Book- Cmos digital integrated circuit analysis and design.
 
 
