@@ -1,0 +1,103 @@
+*  Generated for: PrimeSim
+*  Design library name: adder_lib1
+*  Design cell name: full_adder_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Sun Feb 27 17:43:27 2022
+
+.global gnd!
+********************************************************************************
+* Library          : adder_lib1
+* Cell             : cp_adder
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt cp_adder cin cout inputa inputb sum
+xm41 cout net189 net221 net221 p105 w=0.1u l=0.03u nf=1 m=1
+xm40 net164 inputa net220 net220 p105 w=0.1u l=0.03u nf=1 m=1
+xm39 net178 inputb net164 net220 p105 w=0.1u l=0.03u nf=1 m=1
+xm38 sum net193 net232 net232 p105 w=0.1u l=0.03u nf=1 m=1
+xm31 net218 inputb net129 net218 p105 w=0.1u l=0.03u nf=1 m=1
+xm30 net129 inputa net218 net218 p105 w=0.1u l=0.03u nf=1 m=1
+xm17 net193 cin net63 net221 p105 w=0.1u l=0.03u nf=1 m=1
+xm16 net63 inputb net61 net221 p105 w=0.1u l=0.03u nf=1 m=1
+xm15 net61 inputa net221 net221 p105 w=0.1u l=0.03u nf=1 m=1
+xm14 net193 net189 net121 net221 p105 w=0.1u l=0.03u nf=1 m=1
+xm13 net63 net129 net221 net221 p105 w=0.1u l=0.03u nf=1 m=1
+xm12 net121 inputb net221 net221 p105 w=0.1u l=0.03u nf=1 m=1
+xm11 net121 inputa net221 net221 p105 w=0.1u l=0.03u nf=1 m=1
+xm8 net37 inputa net212 net212 p105 w=0.1u l=0.03u nf=1 m=1
+xm7 net27 inputb net212 net212 p105 w=0.1u l=0.03u nf=1 m=1
+xm9 net189 cin net27 net212 p105 w=0.1u l=0.03u nf=1 m=1
+xm10 net189 inputb net37 net212 p105 w=0.1u l=0.03u nf=1 m=1
+xm6 net27 inputa net212 net212 p105 w=0.1u l=0.03u nf=1 m=1
+xm54 net174 inputa gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm37 cout net189 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm36 gnd! inputb net178 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm35 net178 inputa gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm34 sum net193 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm33 net134 inputb gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm32 net129 inputa net134 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm29 net179 inputa gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm28 net109 inputb net179 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm27 net193 cin net109 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm26 net109 net178 gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm25 net97 inputb gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm24 net193 net189 net97 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm23 net97 inputa gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm22 net85 inputa gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm21 net174 inputb gnd! gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm19 net189 inputb net85 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+xm18 net189 cin net174 gnd! n105 w=0.1u l=0.03u nf=1 m=1
+v73 net220 gnd! dc=1.5
+v72 net232 gnd! dc=1.5
+v71 net218 gnd! dc=1.5
+v70 net212 gnd! dc=1.5
+v81 net221 gnd! dc=1.5
+.ends cp_adder
+
+********************************************************************************
+* Library          : adder_lib1
+* Cell             : full_adder_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 cin cout inputa inputb sum cp_adder
+v4 cin gnd! dc=1.5 pulse ( 0 1.5 3u 0.1p 0.1p 5u 10u )
+v3 inputb gnd! dc=1.5 pulse ( 0 1.5 01.5u 0.1p 0.1p 5u 20u )
+v2 inputa gnd! dc=1.5 pulse ( 0 1.5 0 0.1p 0.1p 5u 10u )
+c12 sum gnd! c=0.01p
+c11 cout gnd! c=0.01p
+
+
+
+
+
+
+
+
+.tran '1u' '20u' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(cin) v(cout) v(inputa) v(inputb) v(sum)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
